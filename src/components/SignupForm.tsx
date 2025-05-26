@@ -27,7 +27,7 @@ const SignupForm: React.FC = () => {
     
     try {
       const { error } = await supabase
-        .from('signups')
+        .from('event_signups')
         .insert([
           { 
             name: formState.name,
